@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-presentacion',
+  imports: [NgOptimizedImage],
   templateUrl: './presentacion.component.html',
-  styleUrl: './presentacion.component.css'
+  styleUrls: ['./presentacion.componente.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PresentacionComponent {
 }
